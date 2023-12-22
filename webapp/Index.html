@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Management Interface</title>
+<style>
+    .edit-section h2 {
+        text-align: center;
+    }
+    
+    .edit-section p {
+        text-align: center;
+        margin: 10px 0; /* Thêm một chút không gian giữa các liên kết */
+    }
+    
+    .button-link {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #333;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    
+    .button-link:hover {
+        background-color: #555;
+    }
+    
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f0f8ff;
+        margin: 0;
+        padding: 20px;
+    }
+    
+    .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+    }
+    
+    header, section, footer {
+        background: #fff;
+        padding: 20px;
+        margin-top: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    }
+    
+    .login-form, .management-section, .edit-section {
+        margin-bottom: 10px;
+        background: #eee;
+        padding: 15px;
+        border-radius: 5px;
+    }
+    
+    input[type="text"], input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    
+    input[type="submit"] {
+        padding: 10px 15px;
+        background: #0056b3;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+        background: #003d66;
+    }
+    
+    h1, h2 {
+    	color: #0056b3;
+	  	text-align: center;
+	  	margin-bottom: 20px;
+	}
+
+</style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Quản Lý Tài Khoản Tài Chính</h1>
+    </header>
+    <section class="edit-section">
+        <h2>Quản lý</h2>
+		<p><a href="quanly.html" class="button-link">Quản lý</a></p>
+        <!-- Management tools go here -->
+    </section>
+    
+    <section class="edit-section">
+        <h2>Tìm kiếm</h2>
+		<p><a href="timkiem.html" class="button-link">Tìm kiếm</a></p>
+        <!-- Management tools go here -->
+    </section>
+    
+	<section class="edit-section">
+	    <h2>Chỉnh sửa</h2>
+	    <p><a href="Themtk.html" class="button-link">Thêm tài khoản</a></p>
+	    <p><a href="suataikhoan.html" class="button-link">Sửa tài khoản</a></p>     
+	    <p><a href="xoataikhoan.html" class="button-link">Xóa tài khoản</a></p>
+	</section>
+</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tìm Kiếm Tài Khoản Cấp 1</title>
+</head>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f0f8ff;
+        margin: 0;
+        padding: 20px;
+    }
+    h2 {
+        color: #0056b3;
+        text-align: center;
+    }
+    form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 255, .1); /* Blue shadow for the form */
+        max-width: 400px;
+        margin: auto;
+    }
+    label {
+        color: #0056b3; /* Dark blue color */
+        margin-bottom: 5px;
+        display: block;
+    }
+    input[type=text], input[type=submit], button {
+        width: 100%;
+        padding: 8px;
+        margin: 10px 0;
+        border: 1px solid #dcdcdc;
+        border-radius: 4px;
+    }
+    input[type=submit] {
+        background-color: #007bff; /* Blue color */
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    input[type=submit]:hover {
+        background-color: #0056b3; /* Darker blue color */
+    }
+    button {
+        background-color: #ddd; /* Light grey background */
+        color: #333; /* Dark text color */
+        border: 1px solid #ccc;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #ccc; /* Slightly darker grey */
+    }
+</style>
+<body>
+    <h2>Tìm Kiếm Tài Khoản</h2>
+    <form action="timkiem" method="get">
+        <input type="text" name="searchTerm" placeholder="Nhập mã tài khoản hoặc tên">
+        <input type="submit" value="Tìm Kiếm">
+        <button type="button" onclick="window.location.href='Index.html';">Quay lại</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Thêm tài khoản</title>
+<meta charset="UTF-8">
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f0f8ff; /* Light blue background */
+        margin: 0;
+        padding: 20px;
+    }
+    h2 {
+        color: #0056b3;
+        text-align: center;/* Dark blue color */
+    }
+    form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 255, .1); /* Blue shadow for the form */
+        max-width: 400px;
+        margin: auto;
+    }
+    label {
+        color: #0056b3; /* Dark blue color */
+        margin-bottom: 5px;
+        display: block;
+    }
+    input[type=text], input[type=submit], button {
+        width: 100%;
+        padding: 8px;
+        margin: 10px 0;
+        border: 1px solid #dcdcdc;
+        border-radius: 4px;
+    }
+    input[type=submit] {
+        background-color: #007bff; /* Blue color */
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    input[type=submit]:hover {
+        background-color: #0056b3; /* Darker blue color */
+    }
+    button {
+        background-color: #ddd; /* Light grey background */
+        color: #333; /* Dark text color */
+        border: 1px solid #ccc;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #ccc; /* Slightly darker grey */
+    }
+</style>
+</head>
+<body>
+    <h2>Thêm Tài Khoản</h2>
+    <form action="them1" method="post">
+        <label for="MaTaiKhoanCap1">Mã tài khoản:</label>
+        <input type="text" id="MaTaiKhoanCap1" name="MaTaiKhoanCap1" required>
+
+        <label for="TenTaiKhoan">Tên tài khoản :</label>
+        <input type="text" id="TenTaiKhoan" name="TenTaiKhoan" required>
+
+        <label for="LoaiTaiSanNoCo">Loại tài sản nợ có :</label>
+        <input type="text" id="LoaiTaiSanNoCo" name="LoaiTaiSanNoCo">
+        
+        <input type="submit" value="Thêm">
+        <button type="button" onclick="window.location.href='Index.html';">Quay lại</button>
+    </form>
+</body>
+</html>

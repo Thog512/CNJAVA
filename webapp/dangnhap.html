@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đăng nhập</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+		background-color: #AFEEEE;
+    }
+    .login-container {
+        display: flex;
+        width: 50%;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    }
+    .left-column {
+        background-color: #fff;
+        padding: 30px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .right-column {
+        background: url('https://i.pinimg.com/736x/f0/7e/48/f07e4816a7295eac3b1c5fd5a10d0d88.jpg') no-repeat center center;
+        background-size: cover;
+        width: 50%;
+        /* Các phong cách khác của bạn */
+    }
+    input[type="text"], input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+    .social-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .social-button {
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .social-button img {
+        height: 20px;
+    }
+    .or {
+        margin: 20px 0;
+    }
+</style>
+</head>
+<body>
+
+<div class="login-container">
+    <div class="left-column">
+        <h2>Log in to your account</h2>
+	    <form class="login-form" action="dangnhap" method="post">
+	        <input type="text" id="username" name="username" placeholder="Tên đăng nhập" required>
+	        <input type="password" id="password" name="password" placeholder="Mật khẩu" required>
+	        <input type="submit" value="Đăng nhập">
+	    </form>
+        <a href="#">Quên tài khoản?</a>
+    </div>
+    <div class="right-column">
+
+    </div>
+</div>
+
+</body>
+</html>
